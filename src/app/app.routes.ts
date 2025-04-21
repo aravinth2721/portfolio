@@ -4,6 +4,7 @@ export const routes: Routes = [
   { path: '', redirectTo: 'home', pathMatch: 'full' },
   {
     path: 'home',
+    title: 'Portfolio | Home',
     loadComponent: () =>
       import('./pages/home/home.component').then((c) => c.HomeComponent),
   },
