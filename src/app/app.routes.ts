@@ -5,12 +5,12 @@ export const routes: Routes = [
   {
     path: 'home',
     loadComponent: () =>
-      import('./components/home/home.component').then((c) => c.HomeComponent),
+      import('./pages/home/home.component').then((c) => c.HomeComponent),
   },
   {
     path: '**',
     loadComponent: () =>
-      import('./components/page-not-found/page-not-found.component').then(
+      import('./pages/page-not-found/page-not-found.component').then(
         (c) => c.PageNotFoundComponent
       ),
   },
